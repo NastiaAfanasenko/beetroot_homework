@@ -1,0 +1,16 @@
+@import "base/index";
+
+
+
+
+@media only screen and (min-width: 370px) {
+  @import "layouts/_mobile_370";
+}
+
+@media only screen and (min-width: 768px) {
+  @import "layouts/_tablet_768";
+}
+
+@media only screen and (min-width: 1440px) {
+  @import "layouts/_desktop_1440";
+}

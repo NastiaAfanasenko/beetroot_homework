@@ -1,0 +1,189 @@
+/*
+@font-face  {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$fontsPath}slick.eot');
+    src: url('.#{$fontsPath}slick.eot?#iefix') format('embedded-opentype'),
+        url('#{$fontsPath}slick.woff') format('woff'),
+        url('#{$fontsPath}slick.ttf') format('truetype'),
+        url('#{$fontsPath}#slick') format('svg');
+}
+*/
+
+
+body {
+  font-family: $baseFontFamily;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $backgroundHeader;
+  margin: 0;
+  height: 57px;
+}
+
+.product-item {
+  margin-left: 19px;
+  text-align: left;
+
+  &__image {
+    margin: auto;
+    display: block;
+  }
+
+  &-weight-400 {
+    font-weight: $fontWeight400;
+    font-size: $fontSizeCategory;
+  }
+
+  &-weight-500 {
+    font-weight: $fontWeight500;
+    font-size: $fontSizeCategory;
+    margin-bottom: 7px;
+  }
+
+  &-product-item-name-weight-500 {
+    font-weight: $fontWeight500;
+    font-size: $fontSizeNameWeight500;
+  }
+
+  &__slogan {
+    font-weight: $fontWeight700;
+    font-size: $fontSizeSlogan;
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    font-weight: $fontWeight700;
+    font-size: $fontSizeName;
+  }
+
+  &__color-selector_title {
+    font-weight: $fontWeight400;
+    font-size: $fontSizeTitle;
+    margin-bottom: 10px;
+  }
+
+  &__color-selector_description {
+    font-weight: $fontWeight400;
+    font-size: $fontSizeDescription;
+    margin-bottom: 19px;
+  }
+
+  &__price {
+    font-weight: $fontWeight400;
+    font-size: $fontSizePrice;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: flex-start;
+
+    &__notice {
+      font-weight: $fontWeight500;
+      font-size: $fontSizeNotice;
+    }
+
+    &-gold {
+      color: $colorPrice;
+      font-size: $fontSizePriceGold;
+      font-weight: $fontWeight600;
+    }
+
+    a.btn {
+      margin: 0 0 0 80px;
+    }
+  }
+
+  .btn-yellow {
+    width: 146px;
+    height: 36px;
+    border-radius: 100px;
+    background-color: $colorBtnYellow;
+    font-weight: $fontWeight600;
+    font-size: $fontSizeBtn;
+    color: $colorText;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px 35px 10px 35px;
+    box-sizing: border-box;
+  }
+  .btn-black {
+    width: 146px;
+    height: 36px;
+    border-radius: 100px;
+    background-color: $colorButtonBlack;
+    font-weight: $fontWeight600;
+    font-size: $fontSizeBtn;
+    color: $colorTextWhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px 35px 10px 35px;
+    box-sizing: border-box;
+  }
+}
+
+.radio-item {
+  display: inline-block;
+}
+
+input[type='radio'] {
+  appearance: none;
+  margin: 0 13px 29px 0;
+  font: inherit;
+  color: currentColor;
+  border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  height: 37px;
+  width: 37px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+
+  &:checked {
+    border-color: black;
+  }
+
+
+  &#white {
+    background-color: $colorRadioWhite;
+  }
+
+  &#red {
+    background-color: $colorRadioRed;
+  }
+
+  &#black {
+    background-color: $colorRadioBlack;
+  }
+}
+
+ 
+  .form__title {
+    font-size: $fontSizeTitle;
+    font-weight: $fontWeight700;
+    color: $colorFormTitle;
+    text-align: center;
+    margin: 39px 0 11px 0;
+  }
+  .form__description {
+    font-size: $fontSizeFormDescription;
+    font-weight: $fontWeight400;
+    color: $colorFormDescription;
+    text-align: center;
+  
+  }
+
+  form input[type=email] {
+    width: 298px;
+    height: 36px;
+    padding: 12px 20px;
+    margin: 30px 22px 0 22px;
+    display: inline-block;
+    border: 1px solid $colorFormBorder;
+    box-sizing: border-box;
+    border-radius: $fontSizeBorderRadius;
+}
+ 
+ 
+ 
