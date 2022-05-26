@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Task 3</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" </head>
+  <!--  prettier-ignore -->
+
+<body>
+  <div class="container">
+    <h1>Конструкция if-else</h1>
+    <div id="res1" class="h2"></div>
+
+    <h1>Тернарный оператор</h1>
+    <div id="res2" class="h2"></div>
+  </div>
+
+  <script>
+
+    const now = new Date().getHours();
+    const res1 = document.getElementById("res1");
+    const res2 = document.getElementById("res2");
+
+    // method 1
+    if (now >= 0 && now <= 12) {
+      greeting = "Good morning";
+    }
+    else if (now > 12 && now <= 17) {
+      greeting = "Good afternoon";
+    }
+    else if (now > 17 && now <= 24) {
+      greeting = "Good evening";
+    }
+    res1.innerHTML = greeting;
+
+    // method 2
+    let greeting2 = now >= 0 && now <= 12
+      ? "Good morning"
+      : now > 12 && now <= 17
+        ? "Good afternoon"
+        : now > 17 && now <= 24
+          ? "Good evening"
+          : undefined;
+    res2.innerHTML = greeting;
+
+
+  </script>
+</body>
+
+</html>

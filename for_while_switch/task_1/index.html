@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Home work</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    tr {
+      border-top: 1px solid black;
+    }
+
+    td {
+      padding-right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Цикл for</h2>
+    <div id="result_1" class="col-md-4"></div>
+
+    <h2>Цикл while</h2>
+    <div id="result_2" class="col-md-4"></div>
+  </div>
+
+  <script>
+    let tableHTML = "<table>";
+    for (let i = 0; i < 5; i++) {
+      let num = i + 1;
+      // tableHTML += "<tr><td>" + num + "</td><td>" + num * num + "</td></tr>\n";
+      tableHTML += `<tr><td>${num}</td><td>${num * num}</td></tr>\n`;
+    }
+
+    tableHTML += "</table>";
+
+    console.log(tableHTML);
+
+    document.getElementById('result_1').innerHTML = tableHTML;
+
+    let tableHTML2 = "<table>";
+    let i = 0; 
+
+    while (i < 5) {
+      console.log(i);
+      let num = i + 1;
+      // tableHTML2 += "<tr><td>" + num + "</td><td>" + num * num + "</td></tr>\n";
+      tableHTML2 += `<tr><td>${num}</td><td>${num * num}</td></tr>\n`;
+      i++;
+    }
+    tableHTML2 += "</table>";
+
+    console.log(tableHTML2);
+
+    document.getElementById('result_2').innerHTML = tableHTML2;
+  </script>
+</body>
+
+</html>
