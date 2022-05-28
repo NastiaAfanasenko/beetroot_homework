@@ -98,31 +98,31 @@ body {
   }
 
   .btn-yellow {
-    width: 146px;
-    height: 36px;
-    border-radius: 100px;
+    width: $buyBtnWidth;
+    height: $buyBtnHeight;
+    line-height: $buyBtnHeight;
     background-color: $colorBtnYellow;
-    font-weight: $fontWeight600;
-    font-size: $fontSizeBtn;
     color: $colorText;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 9px 35px 10px 35px;
-    box-sizing: border-box;
   }
+  
   .btn-black {
-    width: 146px;
-    height: 36px;
-    border-radius: 100px;
+    width: $buyBtnWidth;
+    height: $buyBtnHeight;
+    line-height: $buyBtnHeight;
     background-color: $colorButtonBlack;
-    font-weight: $fontWeight600;
-    font-size: $fontSizeBtn;
     color: $colorTextWhite;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 9px 35px 10px 35px;
-    box-sizing: border-box;
   }
+}
+
+.btn {
+  border-radius: $fontSizeBorderRadius;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  // padding: 9px 35px 10px 35px;
+  box-sizing: border-box;
+  font-weight: $fontWeight600;
+  font-size: $fontSizeBtn;
 }
 
 .radio-item {
@@ -158,32 +158,65 @@ input[type='radio'] {
   }
 }
 
- 
-  .form__title {
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  &__title {
     font-size: $fontSizeTitle;
     font-weight: $fontWeight700;
     color: $colorFormTitle;
     text-align: center;
     margin: 39px 0 11px 0;
   }
-  .form__description {
+
+  &__description {
     font-size: $fontSizeFormDescription;
     font-weight: $fontWeight400;
     color: $colorFormDescription;
+    margin: 0 12px 30px 12px;
     text-align: center;
-  
   }
 
-  form input[type=email] {
-    width: 298px;
+  input[type=email] {
+    // box-sizing: border-box;
+    display: block;
+    width: 100%;
     height: 36px;
-    padding: 12px 20px;
-    margin: 30px 22px 0 22px;
-    display: inline-block;
+    padding: 0 12px 0 12px;
+    margin: 22px 0;
     border: 1px solid $colorFormBorder;
-    box-sizing: border-box;
     border-radius: $fontSizeBorderRadius;
+    justify-content: center;
+  }
+
+  div {
+    padding: 0 22px;
+    box-sizing: border-box;
+  }
+
+  // &__btn {
+  //   display: block;
+  //   border-radius: $fontSizeBorderRadius;
+  //   margin: 0 21px 64px 21px;
+  //   padding: 12px 118px 12px 118px;
+  //   background-color: $colorBtnYellow;
+  // }
+
+  .btn-yellow {
+    height: $signUpBtnHeight;
+    line-height: $signUpBtnHeight;
+    border: 1px solid $colorFormBorder;
+    background-color: $colorBtnYellow;
+    color: $colorText;
+    width: 100%;
+    display: block;
+  }
 }
- 
- 
- 
