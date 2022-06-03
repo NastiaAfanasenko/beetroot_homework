@@ -1,4 +1,4 @@
-nav.menu {
+/*.menu {
     position: absolute;
 
     padding-right: calc(30px + 30%);
@@ -28,12 +28,13 @@ nav.menu {
     flex-direction: row;
     justify-content: flex-start;
 
+
     // &__image-left {
     //     margin: inherit;
     // }
 
     // &__wrapper {
-    //     position: relative;
+    //     flex-direction: row;
     // }
 
     &__description {
@@ -43,6 +44,20 @@ nav.menu {
             margin-top: 200px;
         }
     }
+    &__image {
+        min-height: 100%;
+        position: relative;
+
+        &-right {
+            
+            flex-direction: row-reverse;
+        }
+    }
+        
+
+    &__category {
+        margin-top: 75px;
+    }
 
     #img__bg {
         background-color: $backgroundHeader;
@@ -50,10 +65,16 @@ nav.menu {
         width: 100%;
         z-index: -1;
         left: 0;
-        height: 250px;
+        height: 9%;
     }
 
     &-yellow {
         color: $colorBtnYellow;
     }
 }
+.contaier{
+    &-block {
+        display: flex;
+        flex-direction: column;
+    }
+} */
